@@ -12,4 +12,10 @@ Technical details: Solution is splited into 2 parts.
 
 IMPLEMENTATION
 
+Database connection:
+Connection to the database was implemented using pyodbc library.
+
+Data population:
+
+
 RESULTS

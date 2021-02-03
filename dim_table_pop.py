@@ -8,7 +8,17 @@ conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                       'Trusted_Connection=yes;')
 
 cursor = conn.cursor()
-cursor.execute('SELECT * FROM Studying.dbo.Person')
+
+
+# cursor.execute('''
+#                 INSERT INTO Studying.dbo.Test(Name, Age)
+#                 VALUES
+#                 ('Bob',55),
+#                 ('Jenny',66)
+#                 ''')
+# conn.commit()
+
+cursor.execute('SELECT * FROM Studying.dbo.Test')
 
 for row in cursor:
     print(row)
