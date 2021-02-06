@@ -1,34 +1,28 @@
+-- drop the table if it is exist
 USE Studying;
+DROP TABLE IF EXISTS DateDim;
 
-CREATE TABLE DATE_DIM 
+-- create date dimention table
+CREATE TABLE DateDim
 (
-    [Date] CHAR(10),
-    [DateKey] INT PRIMARY KEY,
-    [DayOfMonth] VARCHAR(2),
-    [DayName] VARCHAR(10),
-    [DayOfWeek] CHAR(1),
-    [WeekOfMonth] CHAR(1),
-    [WeekOfYear] VARCHAR(2),
-    [Month] VARCHAR(2),
-    [MonthName] VARCHAR(10),
-    [Quarter] CHAR(1),
-    [Year] CHAR(4),
-    [YearHalf] CHAR(1),
-    [IsWeekend] BIT,
-    [IsWeekday] BIT,
-    [IsHolidayUSA] BIT
+    [Date] CHAR(10) NOT NULL,
+    [DateKey] INT PRIMARY KEY NOT NULL,
+    [DayOfMonth] VARCHAR(2) NOT NULL,
+    [DayName] VARCHAR(10) NOT NULL,
+    [DayNameShort] VARCHAR(3) NOT NULL,
+    [DayOfWeek] CHAR(1) NOT NULL,
+    [WeekOfYear] VARCHAR(2) NOT NULL,
+    [Month] VARCHAR(2) NOT NULL,
+    [MonthName] VARCHAR(10) NOT NULL,
+    [MonthNameShort] VARCHAR(3) NOT NULL,
+    [Quarter] CHAR(1) NOT NULL,
+    [Year] CHAR(4) NOT NULL,
+    [YearHalf] CHAR(1) NOT NULL,
+    [IsWeekend] BIT NOT NULL,
+    [IsWeekday] BIT NOT NULL,
 );
 
-USE Studying;
-SELECT * FROM Person;
 
+-- select data from created and populated table
 USE Studying;
-CREATE TABLE Test(
-	[Name] VARCHAR(30),
-	[AGE] INT);
-
-USE Studying;
-DROP TABLE Test;
-
-USE Studying;
-SELECT * FROM dbo.Test;
+SELECT * FROM DateDim;

@@ -12,10 +12,21 @@ Technical details: Solution is splited into 2 parts.
 
 IMPLEMENTATION
 
-Database connection:
+Project has 4 files: 
+
+First part
+SQL scripts designed 
+
+Second part
+
+1 Database connection:
 Connection to the database was implemented using pyodbc library.
 
-Data population:
+2 Creation of dimension table
+
+3 Data generation:
+
+4 Data population:
 
 
 RESULTS

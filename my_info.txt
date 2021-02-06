@@ -15,7 +15,6 @@ Hard skills: good knowledge of Python and it`s frameworks and libraries(numpy, m
 
 Soft skills: friendly, communicative, active, purposeful, motivated. 
 
- 
 Experience / IT related educational practice 
 Have few projects on me github(https://github.com/natali217): 
 Landing page 
@@ -39,9 +38,6 @@ Additional education (courses, trainings)
 OktenWeb University (Foundations HTML/CSS),  
 many IT-events and workshops by leading companies(SoftServe, Eleks, Symphony Solution, etc.),  
 EPAM courses DWBI(Data Warehouse and Business Intelligence) 
-
-Hobbies 
-Sports (badminton, volleyball, tenis), books, mountains, travelling, bicycle rider.  
 
  
 
