@@ -1,9 +1,9 @@
 -- drop the table if it is exist
 USE Studying;
-DROP TABLE IF EXISTS DateDim;
+DROP TABLE IF EXISTS [dbo].[DateDim];
 
 -- create date dimention table
-CREATE TABLE DateDim
+CREATE TABLE [dbo].[DateDim]
 (
     [Date] CHAR(10) NOT NULL,
     [DateKey] INT PRIMARY KEY NOT NULL,
@@ -23,6 +23,8 @@ CREATE TABLE DateDim
 );
 
 
--- select data from created and populated table
-USE Studying;
-SELECT * FROM DateDim;
+---- select data from created and populated table
+--USE Studying;
+--SELECT * FROM DateDim;
+
+--Drop table DateDim
